@@ -40,7 +40,25 @@ export const Convertidor = () => {
         else if (origen ==="ml" && destino ==="cm") {
             const result= convertir / 10;
            setResultado(result)
-               }
+            }
+            else if (origen === 'ml' && destino == 'mt'){
+    
+                const result = convertir / 1000;
+                setResultado(result)
+            }
+            else if (origen === 'ml' && destino == 'km'){
+    
+                const result = convertir /1000000; 
+                setResultado(result)
+            }
+            else  if (origen ==="cm" && destino ==="ml") {
+                const result = convertir *10;
+                setResultado(result)
+            }
+            else  if (origen ==="cm" && destino ==="km") {
+                const result = convertir *100000;
+                setResultado(result)
+            }
 
 
     }
